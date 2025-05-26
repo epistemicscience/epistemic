@@ -1,0 +1,105 @@
+name: Knowledge Component Contribution
+description: Contribute a new ESE knowledge component
+title: '[CONTRIBUTION] Component Name'
+labels: ['contribution', 'needs-review']
+
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Contributing a Knowledge Component to ESE
+        
+        Thank you for contributing to the Epistemic Science & Engineering field!
+        
+  - type: dropdown
+    id: domain
+    attributes:
+      label: ESE Domain
+      description: Which ESE domain does this component belong to?
+      options:
+        - science/knowledge-architecture
+        - science/behavioral-intelligence
+        - science/epistemic-strategy
+        - science/epistemic-thermodynamics
+        - science/cognitive-systems-evolution
+        - science/heuristic-epistemology
+        - engineering/cognitive-interfaces
+        - engineering/epistemic-operations
+        - engineering/knowledge-orchestration
+        - engineering/recursive-intelligence
+        - canon/field-declarations
+        - canon/foundational-documents
+        - engine/architecture
+        - engine/foundations
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: component-type
+    attributes:
+      label: Component Type
+      description: What type of component is this?
+      options:
+        - law
+        - pattern
+        - anti-pattern
+        - framework
+        - protocol
+        - core-concept
+        - essay
+        - whitepaper
+        - field-declaration
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Component Description
+      description: Provide a clear description of what this component contributes to ESE
+      placeholder: Describe the component's purpose, scope, and contribution to the ESE field...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: l1-l150-metadata
+    attributes:
+      label: L1-L150 Metadata
+      description: Provide the complete YAML frontmatter (use the L1-L150 refiner tool)
+      placeholder: |
+        ---
+        id: "domain:type.component-name"
+        title: "Component Title"
+        version: "1.0.0"
+        author: "Your Name"
+        epistemic_status: "proposed"
+        created: "YYYY-MM-DD"
+        updated: "YYYY-MM-DD"
+        type: "component-type"
+        classification:
+          domain: "domain-name"
+          layer: "orchestration"
+          function: "functional description"
+        semantic_continuity:
+          summary: "Summary under 200 characters"
+        ---
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: quality-checklist
+    attributes:
+      label: Quality Checklist
+      description: Confirm your component meets ESE standards
+      options:
+        - label: Component follows L1-L150 metadata standards
+          required: true
+        - label: Content is original and contributes new knowledge to ESE
+          required: true
+        - label: Component is properly classified in correct domain
+          required: true
+        - label: Examples and applications are provided
+          required: true
+        - label: Component has been validated with automated tools
+          required: true 

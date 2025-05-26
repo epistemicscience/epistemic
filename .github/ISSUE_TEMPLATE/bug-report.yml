@@ -1,0 +1,58 @@
+name: Bug Report
+description: Report an issue with ESE tools or documentation
+title: '[BUG] Brief description'
+labels: ['bug', 'needs-triage']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug Report for ESE Tools/Documentation
+        
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected Component
+      description: Which ESE component has the issue?
+      options:
+        - L1-L150 Refiner Tool
+        - JSON Twin Generator
+        - Schema Validator
+        - Documentation
+        - Knowledge Component
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear description of the issue
+      placeholder: Describe what happened and what you expected to happen...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to...
+        2. Run command...
+        3. See error...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Your system information
+      placeholder: |
+        - OS: [e.g., macOS 14.0]
+        - Python version: [e.g., 3.11]
+        - Tool version: [e.g., L1-L150 refiner v1.0]
+    validations:
+      required: true 

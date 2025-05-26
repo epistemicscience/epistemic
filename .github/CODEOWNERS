@@ -1,0 +1,30 @@
+# ESE Field Code Owners
+# These users will be automatically requested for review
+
+# Global ownership
+* @rashidae
+
+# Canon directory - requires field founder approval
+/canon/ @rashidae
+
+# Science domains - require domain expert review
+/science/knowledge-architecture/ @rashidae
+/science/behavioral-intelligence/ @rashidae
+/science/epistemic-strategy/ @rashidae
+/science/epistemic-thermodynamics/ @rashidae
+/science/cognitive-systems-evolution/ @rashidae
+/science/heuristic-epistemology/ @rashidae
+
+# Engineering domains - require implementation expert review
+/engineering/ @rashidae
+
+# Engine architecture - requires technical review
+/engine/ @rashidae
+
+# Meta tools and governance - require maintainer review
+/meta/ @rashidae
+
+# Documentation
+*.md @rashidae
+README.md @rashidae
+CONTRIBUTING.md @rashidae 
